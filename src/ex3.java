@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ex3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        // ssssss
+        //
         System.out.print("enter your first name: ");
         String fn = input.nextLine().trim();
 
@@ -12,11 +12,16 @@ public class ex3 {
 
         char fin= fn.charAt(0);
         char lin= ln.charAt(0);
-            // change
-        String initials =("" + fin + lin);
+        String initials =("" + fin + lin).toUpperCase();
+
+        int len1= fn.length();
+        int len2= ln.length();
+        int len=len1 + len2;
 
 
-        System.out.println(initials);
+
+
+        System.out.println("your initials are "+ initials + " " +"and your full name has"+" " + len +" "+ "characters");
 
 
 
