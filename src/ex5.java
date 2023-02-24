@@ -5,7 +5,7 @@ public class ex5 {
 
         System.out.print("enter any number: ");
         int num = input.nextInt();
-
+        //nn
         for(int i = 1; i < num; i++) {
             if(i % 2 == 0){
                 System.out.print(i);
