@@ -12,7 +12,7 @@ public class ex3 {
 
         char fin= fn.charAt(0);
         char lin= ln.charAt(0);
-
+            // change
         String initials =("" + fin + lin);
 
 
