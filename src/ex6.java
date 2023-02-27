@@ -10,7 +10,7 @@ public class ex6 {
 
 
         for (int i = 1; i < 10; i++) {
-            System.out.print("enter integers: ");
+            System.out.print("enter integers:" + i +":");
             int num = input.nextInt();
 
             if (num > 0) {
