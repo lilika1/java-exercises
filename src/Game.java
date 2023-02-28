@@ -1,3 +1,4 @@
+import javax.xml.namespace.QName;
 import java.util.Random;
 
 public class Game {
@@ -21,17 +22,19 @@ public class Game {
     public void play(){
 
         Random dice = new Random();
-        while(players[currentPlayer].getPosition() < 63) {
+        while(players[currentPlayer].getPosition() < 63 ) {
 
             int roll = dice.nextInt(6) + dice.nextInt(6) + 2;
             System.out.println(players[currentPlayer].getName() + "rolled a "+ roll);
             players[currentPlayer].move(roll);
             System.out.println(players[currentPlayer].getName() + "moved to "+players[currentPlayer].getPosition());
-            //currentPlayer++;
+            currentPlayer=(currentPlayer+1)% players.length;
 
 
         }
-        currentPlayer++;
+
+
+
 
 
         System.out.println(players[currentPlayer].getName() + " won the game!");
